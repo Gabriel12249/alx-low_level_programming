@@ -5,25 +5,20 @@
 */
 int main(void)
 {
-int ch;
-int n;
-int m;
-for (ch = 48; ch <= 57; ch++)
+int digot1, digit2;
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-for (n = 49; n <= 57; n++)
+for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 {
-for (m = 50; m <= 57; m++)
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
+if (digit1 == 8 && digit2 == 9)
+continue;
 {
-if (n > ch && m > n)
-{
-putchar(ch);
-putchar(n);
-putchar(m);
-if (ch != 55 || n != 56 || m != 57)
-{
-putchar(44);
-putchar(32);
+putchar(',');
+putchar(' ');
 }
-putchar(10);
+}
+putchar('\n');
 return (0);
 }
