@@ -7,13 +7,14 @@
 */
 int main(void)
 {
-int n, lastd;
+int n;
+int lastd;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (n > 5)
+if (lastd > 5)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n);
+printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 }
 else if (lastd == 0)
 {
